@@ -13,7 +13,7 @@ const OutleadHeroSection = () => {
     <div
       onClick={handleClick}
       style={{ 
-        height: "500vh", 
+        height: "200vh", 
         backgroundColor: colors[colorIndex], 
         transition:"0.5s",
         width: "100%", 
@@ -25,9 +25,7 @@ const OutleadHeroSection = () => {
         boxSizing: "border-box"
       }}
     >
-      <p style={{ color: "white", fontSize: "24px" }}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. 
-      </p>
+      
     </div>
   );
 };

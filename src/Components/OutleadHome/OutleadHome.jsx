@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./OutleadHome.css"
 import OutleadHeroSection from "../OutleadHerosection/OutleadHeroSection";
+import OutleadClients from "../OutleadClients/OutleadClients";
 const OutleadHome = () => {
     const [isHidden, setIsHidden] = useState(false);
     const [lastScrollY, setLastScrollY] = useState(0);
@@ -31,9 +32,9 @@ const OutleadHome = () => {
 
                 </div>
             </section>
-            <section>
-                <OutleadHeroSection />
-            </section>
+
+            <OutleadHeroSection />
+            <OutleadClients/>
         </>
     )
 }
