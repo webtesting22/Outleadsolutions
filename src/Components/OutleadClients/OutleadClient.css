@@ -1,33 +1,126 @@
-#OutleadClientsContainer .Top{
+#OutleadClientsContainer .Top {
     width: 60%;
     text-align: center;
     margin: auto;
 }
 
-.AnimatedLine{
-    margin: 40px 0px;
+#OutleadClientsContainer{
+    position: relative;
+}
+.AnimatedLine {
+    margin: 20px 0px;
     height: 20vh;
     /* background-color: red; */
     display: flex;
     width: 100%;
 }
-.AnimatedLine div:first-child{
+
+.AnimatedLine div:first-child {
     border-right: 1px solid #e5e5e5;
     width: 100%;
 }
-.AnimatedLine div:last-child{
+
+.AnimatedLine div:last-child {
     /* border-right: 1px solid gray; */
     width: 100%;
 }
-.icons{
+
+.icons {
     background-color: white;
     border: 2px solid rgb(59, 59, 59);
     border-radius: 50%;
     height: 50px;
     width: 50px;
+    margin-left: -20px;
 
 }
-.icons i{
+
+.icons i {
     font-size: 50px;
     color: rgb(0, 0, 0);
+}
+
+.ClientCards {
+    width: 80%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100%;
+    /* background-color: red; */
+}
+
+.leftSideRow {
+    width: 100%;
+    /* background-color: red; */
+    /* height: 30vh; */
+    margin: 40px 2.5px;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+.rightSideRow {
+    width: 100%;
+    /* background-color: red; */
+    /* height: 30vh; */
+    margin: 40px 2.5px;
+    /* display: flex; */
+    flex-wrap: wrap;
+}
+
+.ClientCard {
+    /* height: 30vh; */
+    margin: 5px 0px;
+    /* width: 100%; */
+    background-color: #fafafa;
+    border-radius: 20px;
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+}
+
+.TopBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.TopBar div:first-child i{
+    font-size: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px;
+}
+.TopBar div:last-child i{
+    font-size: 50px;
+    /* border: 2px solid black; */
+    border-radius: 50%;
+    /* background-color: white; */
+    margin-right: 10px;
+    color: rgba(128, 128, 128, 0.363);
+}
+.ShadowEffect{
+    height: 20vh;
+    width: 100%;
+    /* background-color: red; */
+    position: absolute;
+    box-shadow: 0px -160px 106px 20px white;
+    display: flex;
+
+}
+.ShadowEffect div{
+    width: 100%;
+    /* background-color: red; */
+    height: 20vh;
+    
+}
+.ShadowEffect div:first-child{
+    border-right: 1px solid #e5e5e5;
+    margin-bottom: 20px 0px;
+}
+
+.viewMoreBtn{
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
 }

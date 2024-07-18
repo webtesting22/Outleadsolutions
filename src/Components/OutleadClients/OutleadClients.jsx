@@ -4,19 +4,49 @@ const OutleadClients = () => {
 
     const clientPics = [
         {
-            icons:<i class='bx bxs-user-circle'></i>
+            icons: <i class='bx bxs-user-circle'></i>
         },
         {
-            icons:<i class='bx bxs-user-circle'></i>
+            icons: <i class='bx bxs-user-circle'></i>
         },
         {
-            icons:<i class='bx bxs-user-circle'></i>
+            icons: <i class='bx bxs-user-circle'></i>
         },
         {
-            icons:<i class='bx bxs-user-circle'></i>
+            icons: <i class='bx bxs-user-circle'></i>
         },
         {
-            icons:<i class='bx bxs-user-circle'></i>
+            icons: <i class='bx bxs-user-circle'></i>
+        },
+    ]
+
+    const LeftsideCards = [
+        {
+            CardImage: "",
+            CardHeading: "David Jackson",
+            CardDescription: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat labore expedita officia quam, pariatur id exercitationem non sed nihil ipsam?"
+        },
+        {
+            CardImage: "",
+            CardHeading: "David Jackson",
+            CardDescription: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat labore expedita officia quam, pariatur id exercitationem non sed nihil ipsam?"
+        },
+        {
+            CardImage: "",
+            CardHeading: "David Jackson",
+            CardDescription: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat labore expedita officia quam, pariatur id exercitationem non sed nihil ipsam?"
+        },
+    ]
+    const rightsideCards = [
+        {
+            CardImage: "",
+            CardHeading: "David Jackson",
+            CardDescription: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat labore expedita officia quam, pariatur id exercitationem non sed nihil ipsam?"
+        },
+        {
+            CardImage: "",
+            CardHeading: "David Jackson",
+            CardDescription: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat labore expedita officia quam, pariatur id exercitationem non sed nihil ipsam?"
         },
     ]
     return (
@@ -45,6 +75,55 @@ const OutleadClients = () => {
                         </div>
                     </div>
                 </div>
+                <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
+                    <div className="ClientCards">
+                        <div className="leftSideRow">
+                            {LeftsideCards.map((item, index) => (
+                                <div className="ClientCard" key={index}>
+                                    <div className="TopBar">
+                                        <div style={{ display: "flex", alignItems: "center" }}>
+                                            <i class='bx bxs-user-circle'></i>
+                                            <h4>{item.CardHeading}</h4>
+                                        </div>
+                                        <div>
+                                            <i class='bx bxs-quote-single-right'></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style={{ textAlign: "start" }}>{item.CardDescription}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                        <div className="rightSideRow">
+                            {rightsideCards.map((item, index) => (
+                                <div className="ClientCard" key={index}>
+                                    <div className="TopBar">
+                                        <div style={{ display: "flex", alignItems: "center" }}>
+                                            <i class='bx bxs-user-circle'></i>
+                                            <h4>{item.CardHeading}</h4>
+                                        </div>
+                                        <div>
+                                            <i class='bx bxs-quote-single-right'></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p style={{ textAlign: "start" }}>{item.CardDescription}</p>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </div>
+                <div className="ShadowEffect">
+                    <div></div>
+                    <div></div>
+                </div>
+               <div className="viewMoreBtn">
+               <div className="AnimatedBtn">
+                    <button>Read More</button>
+                </div>
+               </div>
             </section>
         </>
     )
