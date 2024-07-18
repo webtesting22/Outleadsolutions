@@ -12,14 +12,23 @@
 .NavigationBar {
     width: 70%;
     background-color: rgb(255, 255, 255);
-    transition: top 0.3s ease;
+    transition: transform 0.5s ease-in-out;
     height: 15vh;
     border-radius: 50px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    position: absolute;
+    position: fixed;
+    /* transform: translateY(0); Initial position */
+    transform: translate3d(0, 0, 0); /* Initial position */
+    transform-style: preserve-3d;
     top: 6%;
+    z-index: 1000;
 }
 
 .NavigationBar.hidden {
-    top: -20%;
+    transition: transform 0.5s ease-in-out;
+    transform: translate3d(0, -200px, 0); /* Move out of view */
+    transform-style: preserve-3d;
+    top: 6%;
+    /* transform: translateY(-100%); */
+    /* transition: transform 0.3s ease-out; */ 
 }

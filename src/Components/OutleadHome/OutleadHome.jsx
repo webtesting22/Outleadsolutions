@@ -11,8 +11,10 @@ const OutleadHome = () => {
 
         if (currentScrollY > lastScrollY && currentScrollY > 200) {
             setIsHidden(true); // Hide the navbar when scrolling down
-        } else {
+            
+        } else  if (currentScrollY < lastScrollY){
             setIsHidden(false); // Show the navbar when scrolling up
+            
         }
 
         setLastScrollY(currentScrollY);
