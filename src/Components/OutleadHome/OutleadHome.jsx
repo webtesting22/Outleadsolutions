@@ -11,10 +11,10 @@ const OutleadHome = () => {
 
         if (currentScrollY > lastScrollY && currentScrollY > 200) {
             setIsHidden(true); // Hide the navbar when scrolling down
-            
-        } else  if (currentScrollY < lastScrollY){
+
+        } else if (currentScrollY < lastScrollY) {
             setIsHidden(false); // Show the navbar when scrolling up
-            
+
         }
 
         setLastScrollY(currentScrollY);
@@ -31,12 +31,14 @@ const OutleadHome = () => {
         <>
             <section id="AnimatedNavigationBar">
                 <div className={`NavigationBar ${isHidden ? 'hidden' : ''}`}>
-
+                    <div className="AnimatedBtn">
+                        <button>Read More</button>
+                    </div>
                 </div>
             </section>
 
             <OutleadHeroSection />
-            <OutleadClients/>
+            <OutleadClients />
         </>
     )
 }

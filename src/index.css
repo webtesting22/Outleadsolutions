@@ -32,11 +32,36 @@ body {
   line-height: 70px;
   text-align: center;
 }
-.Sectionheading p{
+
+.Sectionheading p {
   color: rgba(18, 9, 30, .6);
   font-size: 20px;
-  
+
 }
-p{
+
+p {
   text-align: center;
+}
+
+.AnimatedBtn button {
+  border-radius: 100px;
+  padding: 16px 28px;
+  font-size: 14px;
+  border: none;
+  background-color: black;
+  border: 2px solid black;
+  color: white;
+  transition: .5s;
+}
+
+.AnimatedBtn button:hover {
+  border-radius: 100px;
+  padding: 16px 40px;
+  font-size: 14px;
+  border: none;
+  background-color: rgb(33, 33, 33);
+  border: 2px solid black;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: .5s;
 }
