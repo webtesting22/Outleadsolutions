@@ -1,0 +1,25 @@
+#AnimatedNavigationBar {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+.NavigationBar {
+    width: 70%;
+    background-color: rgb(255, 255, 255);
+    transition: top 0.3s ease;
+    height: 15vh;
+    border-radius: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    position: absolute;
+    top: 6%;
+}
+
+.NavigationBar.hidden {
+    top: -20%;
+}
