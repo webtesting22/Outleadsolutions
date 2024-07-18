@@ -11,7 +11,8 @@
 
 .NavigationBar {
     width: 70%;
-    background-color: rgb(255, 255, 255);
+    /* background-color: rgb(255, 255, 255); */
+    /* background:transparent; */
     transition: transform 0.5s ease-in-out;
     height: 15vh;
     border-radius: 50px;
@@ -22,6 +23,7 @@
     transform-style: preserve-3d;
     top: 6%;
     z-index: 1000;
+    
 }
 
 .NavigationBar.hidden {

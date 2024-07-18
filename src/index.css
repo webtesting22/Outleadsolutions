@@ -31,12 +31,29 @@ body {
   font-weight: 500;
   line-height: 70px;
   text-align: center;
+  /* color: black; */
 }
 .Sectionheading p{
-  color: rgba(18, 9, 30, .6);
+  /* color: rgba(18, 9, 30, .6); */
   font-size: 20px;
   
 }
 p{
   text-align: center;
+}
+.orangeBlack{
+  background-color: rgba(40, 43, 41, 1);
+  color: #F9B230;
+  border:2px solid #F9B230;
+}
+.orangeWhite{
+  background-color: #FFA500;
+  color:#EBEDED;
+  border: 2px solid #EBEDED;
+}
+
+.lightTheme {
+  background-color: #EBEDED;
+  color: #3E3443;  
+  border:2px solid #3E3443;
 }
