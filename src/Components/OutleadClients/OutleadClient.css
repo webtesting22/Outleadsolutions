@@ -27,7 +27,7 @@
 
 .icons {
     background-color: white;
-    border: 2px solid rgb(59, 59, 59);
+    /* border: 2px solid rgb(59, 59, 59); */
     border-radius: 50%;
     height: 50px;
     width: 50px;
@@ -46,6 +46,7 @@
     /* align-items: center; */
     justify-content: center;
     height: 100%;
+    
     /* background-color: red; */
 }
 
@@ -65,16 +66,17 @@
     margin: 40px 2.5px;
     /* display: flex; */
     flex-wrap: wrap;
+    
 }
 
 .ClientCard {
     /* height: 30vh; */
     margin: 5px 0px;
     /* width: 100%; */
-    background-color: #fafafa;
+    
     border-radius: 20px;
     padding: 20px;
-    border: 1px solid #f0f0f0;
+    border: 2px solid ;
 }
 
 .TopBar {
@@ -86,36 +88,31 @@
 }
 .TopBar div:first-child i{
     font-size: 50px;
-    border: 2px solid black;
+    border: 2px solid;
     border-radius: 50%;
-    background-color: white;
     margin-right: 10px;
 }
 .TopBar div:last-child i{
     font-size: 50px;
-    /* border: 2px solid black; */
     border-radius: 50%;
-    /* background-color: white; */
     margin-right: 10px;
     color: rgba(128, 128, 128, 0.363);
 }
 .ShadowEffect{
     height: 20vh;
     width: 100%;
-    /* background-color: red; */
     position: absolute;
-    box-shadow: 0px -160px 106px 20px white;
+    
     display: flex;
 
 }
 .ShadowEffect div{
     width: 100%;
-    /* background-color: red; */
     height: 20vh;
     
 }
 .ShadowEffect div:first-child{
-    border-right: 1px solid #e5e5e5;
+ 
     margin-bottom: 20px 0px;
 }
 

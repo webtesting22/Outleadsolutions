@@ -13,9 +13,9 @@ const OutleadHome = () => {
         if (currentScrollY > lastScrollY && currentScrollY > 200) {
             setIsHidden(true); // Hide the navbar when scrolling down
 
-        } else if (currentScrollY < lastScrollY) {
+        } 
 
-        } else if (currentScrollY < lastScrollY) {
+         else if (currentScrollY < lastScrollY) {
             setIsHidden(false); // Show the navbar when scrolling up
 
         }
@@ -44,19 +44,23 @@ const OutleadHome = () => {
     }, [lastScrollY]);
     return (
         <>
-            <div style={{border:"none"}}
+            <div style={{ border: "none" }}
                 onClick={changeTheme}
                 className={`container ${currentTheme.className}`} >
                 <section id="AnimatedNavigationBar">
                     <div className={`NavigationBar ${isHidden ? 'hidden' : ''}  ${currentTheme.className}`}>
-                                            <div className="AnimatedBtn">
-                        <button>Read More</button>
-                    </div>
+                        <div className="AnimatedBtn">
+                            <button>Read More</button>
+                        </div>
                     </div>
                 </section>
 
-            <OutleadHeroSection />
-            <OutleadClients/>
+                <OutleadHeroSection />
+
+                <OutleadServices />
+                <OutleadClients />
+
+            </div>
         </>
     )
 }

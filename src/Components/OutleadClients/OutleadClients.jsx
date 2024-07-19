@@ -76,10 +76,10 @@ const OutleadClients = () => {
                     </div>
                 </div>
                 <div style={{ display: "flex", justifyContent: "center", width: "100%" }}>
-                    <div className="ClientCards">
+                    <div className="ClientCards ">
                         <div className="leftSideRow">
                             {LeftsideCards.map((item, index) => (
-                                <div className="ClientCard" key={index}>
+                                <div className="ClientCard  ${currentTheme.className}" key={index}>
                                     <div className="TopBar">
                                         <div style={{ display: "flex", alignItems: "center" }}>
                                             <i class='bx bxs-user-circle'></i>
@@ -97,7 +97,7 @@ const OutleadClients = () => {
                         </div>
                         <div className="rightSideRow">
                             {rightsideCards.map((item, index) => (
-                                <div className="ClientCard" key={index}>
+                                <div className="ClientCard  `${currentTheme.className}`" key={index}>
                                     <div className="TopBar">
                                         <div style={{ display: "flex", alignItems: "center" }}>
                                             <i class='bx bxs-user-circle'></i>
@@ -119,11 +119,11 @@ const OutleadClients = () => {
                     <div></div>
                     <div></div>
                 </div>
-               <div className="viewMoreBtn">
-               <div className="AnimatedBtn">
-                    <button>Read More</button>
+                <div className="viewMoreBtn `${currentTheme.className}`">
+                    <div className="AnimatedBtn `${currentTheme.className}`">
+                        <button className="`${currentTheme.className}`">Read More</button>
+                    </div>
                 </div>
-               </div>
             </section>
         </>
     )

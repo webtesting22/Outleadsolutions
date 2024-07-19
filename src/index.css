@@ -33,14 +33,12 @@ body {
   text-align: center;
   /* color: black; */
 }
-<<<<<<< HEAD
-.Sectionheading p{
-  /* color: rgba(18, 9, 30, .6); */
-=======
+
+
 
 .Sectionheading p {
   color: rgba(18, 9, 30, .6);
->>>>>>> f715da09e39300714dcf49cc59e3f5273901b60d
+
   font-size: 20px;
 
 }
@@ -48,7 +46,7 @@ body {
 p {
   text-align: center;
 }
-<<<<<<< HEAD
+
 .orangeBlack{
   background-color: rgba(40, 43, 41, 1);
   color: #F9B230;
@@ -65,16 +63,14 @@ p {
   color: #3E3443;  
   border:2px solid #3E3443;
 }
-=======
 
-.AnimatedBtn button {
+
+.AnimatedBtn > button {
   border-radius: 100px;
   padding: 16px 28px;
   font-size: 14px;
-  border: none;
-  background-color: black;
-  border: 2px solid black;
-  color: white;
+  background: transparent;
+  border: 2px solid ;
   transition: .5s;
 }
 
@@ -82,11 +78,7 @@ p {
   border-radius: 100px;
   padding: 16px 40px;
   font-size: 14px;
-  border: none;
-  background-color: rgb(33, 33, 33);
-  border: 2px solid black;
-  color: rgb(255, 255, 255);
+  border: 2px solid ;
   cursor: pointer;
   transition: .5s;
 }
->>>>>>> f715da09e39300714dcf49cc59e3f5273901b60d
