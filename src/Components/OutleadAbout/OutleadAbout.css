@@ -1,0 +1,20 @@
+.aboutParagraph {
+  display: flex;
+  /* max-width: 780px; */
+  margin: 10px;
+  font-size: 20px;
+  text-align: center;
+  
+  
+  
+
+}
+.about-section {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  padding-top: 200px;
+}

@@ -1,26 +1,134 @@
-.company-header{
-    font-size:35px;
-    /* color: rgb(20, 2, 2); */
-    justify-content:center;
-    display:flex;
-    /* margin:100px; */
-    margin: auto;
-    text-align: center;
-    max-width:780px;
+.company-header {
+  font-size: 35px;
+  justify-content: center;
+  display: flex;
+  margin: auto;
+  text-align: center;
+  max-width: 780px;
 }
-.servicesLogo img{
-    object-fit: contain;
-    aspect-ratio: 3/2;
-    width:100%;
-    margin:auto;
-    /* height: 45px; */
+.servicesLogo img {
+  object-fit: contain;
+  aspect-ratio: 3/2;
+  width: 100%;
+  margin: auto;
 }
-.servicesLogo{
-    border-radius: 50%;
-    border:2px solid;
-    height: 50px;
-    width: 50px;
-    display: flex;
-    justify-content: center;
-    /* margin-left: -5px; */
+.servicesLogo {
+  border-radius: 50%;
+  border: 2px solid;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+}
+.servicesContainer {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  flex-direction: column;
+  padding-top: 100px;
+  /* overflow-y: hidden; */
+  text-align: center;
+}
+.serviceCard {
+  /* border: 2px solid; */
+  /* border-radius: 20px; */
+  text-align: center;
+  flex: 1;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  padding: 10px;
+  margin: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.serviceCard:nth-child(1) {
+  position: sticky;
+  top: 50px;
+  left:50px;
+  transform:translateY(200px);
+  transition: transform 0.5s ease;
+  z-index: 6; /* Highest z-index */
+}
+
+.serviceCard:nth-child(2) {
+  position: sticky;
+   top: 50px;
+  left:550px;
+  transform:translateY(200px);
+  transition: transform 0.5s ease;
+  z-index: 5;
+}
+
+.serviceCard:nth-child(3) {
+  position: sticky;
+  top: 50px;
+  left:1050px;
+  transform:translateY(200px);
+  transition: transform 0.5s ease;
+  z-index: 4;
+}
+
+.serviceCard:nth-child(4) {
+  position: sticky;
+  top: 100px;
+  transform:translateY(400px);
+  transition: transform 0.5s ease;
+  left:0px;
+  z-index: 3;
+}
+
+.serviceCard:nth-child(5) {
+  position: sticky;
+  top: 100px;
+  transform:translateY(400px);
+  transition: transform 0.5s ease;
+  left:550px;
+  z-index: 2;
+}
+
+.serviceCard:nth-child(6) {
+  position: sticky;
+  top: 100px;
+  transform:translateY(400px);
+  transition: transform 0.5s ease;
+  left:1050px;
+  z-index: 1;
+}
+.serviceCard:nth-child(7) {
+  position: sticky;
+  top: 200px;
+  /* transform:translateY(400px);
+  transition: transform 0.5s ease; */
+  left:0px;
+  z-index: 1;
+}
+.serviceCard :hover {
+  /* flex: 1.5; */
+  transition: all 0.3s ease-in-out;
+  
+}
+.serviceCard.hidden {
+  flex: 0.5; 
+  opacity: 0.2;
+  pointer-events: none;
+  height: 200px;
+}
+
+
+.serviceCard .title {
+  font-size: 18px;
+  font-weight: bold;
+  position: absolute;
+ 
+}
+.serviceCard .description {
+  display: none;
+  margin-top: 20px;
+  position: absolute;
 }

@@ -1,62 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState,useContext } from "react";
 import "./OutleadHome.css"
 import OutleadHeroSection from "../OutleadHerosection/OutleadHeroSection";
 import OutleadClients from "../OutleadClients/OutleadClients";
-import OutleadServices from "../OutleadServices/OutleadServices"
+import OutleadServices from "../OutleadServices/OutleadServices";
+import OutleadAbout from "../OutleadAbout/OutleadAbout";
+import { Link } from "react-router-dom";
+import ThemeContext from "../../../ThemeContext";
+import NavigationBar from "../NavigationBar/NavigationBar";
 const OutleadHome = () => {
-    const [isHidden, setIsHidden] = useState(false);
-    const [lastScrollY, setLastScrollY] = useState(0);
+    
+    const { currentTheme, changeTheme } = useContext(ThemeContext);
 
-    const handleScroll = () => {
-        const currentScrollY = window.scrollY;
-
-        if (currentScrollY > lastScrollY && currentScrollY > 200) {
-            setIsHidden(true); // Hide the navbar when scrolling down
-
-        } 
-
-         else if (currentScrollY < lastScrollY) {
-            setIsHidden(false); // Show the navbar when scrolling up
-
-        }
-
-        setLastScrollY(currentScrollY);
-    };
-    const themes = [
-        { name: "OrangeBlackTheme", className: "orangeBlack", },
-        { name: "OrangeWhiteTheme", className: "orangeWhite", },
-        { name: "LightTheme", className: "lightTheme", },
-
-    ]
-    const [currentThemeIndex, setCurrentThemeIndex] = useState(0);
-    function changeTheme() {
-        setCurrentThemeIndex((prevIndex) => (prevIndex + 1) % themes.length);
-
-    }
-    const currentTheme = themes[currentThemeIndex];
-
-    useEffect(() => {
-        window.addEventListener('scroll', handleScroll);
-
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
-    }, [lastScrollY]);
+   
     return (
         <>
             <div style={{ border: "none" }}
                 onClick={changeTheme}
                 className={`container ${currentTheme.className}`} >
-                <section id="AnimatedNavigationBar">
-                    <div className={`NavigationBar ${isHidden ? 'hidden' : ''}  ${currentTheme.className}`}>
-                        <div className="AnimatedBtn">
-                            <button>Read More</button>
-                        </div>
-                    </div>
-                </section>
-
+               
+                <NavigationBar />
                 <OutleadHeroSection />
-
+                {/* <OutleadAbout /> */}
                 <OutleadServices />
                 <OutleadClients />
 
@@ -65,4 +29,4 @@ const OutleadHome = () => {
     )
 }
 
-export default OutleadHome
+export default OutleadHome;

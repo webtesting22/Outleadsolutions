@@ -19,7 +19,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
-  background-color: white;
+  position: relative;
   font-family: "Outfit", sans-serif;
 }
 
@@ -31,16 +31,14 @@ body {
   font-weight: 500;
   line-height: 70px;
   text-align: center;
-  /* color: black; */
 }
 
-
+a{
+  text-decoration: none;
+}
 
 .Sectionheading p {
-  color: rgba(18, 9, 30, .6);
-
   font-size: 20px;
-
 }
 
 p {
@@ -48,37 +46,75 @@ p {
 }
 
 .orangeBlack{
-  background-color: rgba(40, 43, 41, 1);
+  /* background-color: rgba(40, 43, 41, 1); */
+  background-color: #000000;
+  /* background-image: linear-gradient(to bottom right ,rgba(40,43,41,1), #F9B230); */
+
   color: #F9B230;
-  border:2px solid #F9B230;
+  border-color:  #F9B230;
 }
 .orangeWhite{
-  background-color: #FFA500;
+  /* background-color: #FFA500; */
+  background-color: #F9B230;
   color:#EBEDED;
-  border: 2px solid #EBEDED;
+  border-color: #EBEDED;
 }
 
 .lightTheme {
   background-color: #EBEDED;
   color: #3E3443;  
-  border:2px solid #3E3443;
+  border-color: #3E3443;
 }
 
-
-.AnimatedBtn > button {
+.AnimatedBtn  button {
   border-radius: 100px;
   padding: 16px 28px;
   font-size: 14px;
-  background: transparent;
+  background:none;
   border: 2px solid ;
-  transition: .5s;
+  /* transition: .5s; */
 }
 
 .AnimatedBtn button:hover {
   border-radius: 100px;
   padding: 16px 40px;
   font-size: 14px;
+  background: none;
   border: 2px solid ;
   cursor: pointer;
   transition: .5s;
+}
+.orangeBlack .AnimatedBtn button {
+  color: #F9B230;
+  border-color: #F9B230;
+}
+
+.orangeWhite .AnimatedBtn button {
+  color: #EBEDED;
+  border-color: #EBEDED;
+}
+
+.lightTheme .AnimatedBtn button {
+  color: #3E3443;
+  border-color: #3E3443;
+}
+
+.orangeBlack a {
+  color: #F9B230;
+}
+.orangeWhite a {
+  color: #EBEDED;
+}
+.lightTheme a {
+  color: #3E3443;
+}
+
+.orangeWhite body{
+  background-color: #F9B230;
+}
+.orangeBlack body{
+  background-color: rgba(40, 43, 41, 1);
+}
+.lightTheme body {
+  background-color: #EBEDED;
 }

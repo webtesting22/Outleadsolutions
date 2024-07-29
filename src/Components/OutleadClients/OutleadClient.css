@@ -10,78 +10,77 @@
 .AnimatedLine {
     margin: 20px 0px;
     height: 20vh;
-    /* background-color: red; */
     display: flex;
     width: 100%;
 }
 
 .AnimatedLine div:first-child {
-    border-right: 1px solid #e5e5e5;
+    border-right: 1px solid;
     width: 100%;
 }
 
 .AnimatedLine div:last-child {
-    /* border-right: 1px solid gray; */
+    border-right: 1px solid ;
     width: 100%;
 }
 
 .icons {
-    background-color: white;
-    /* border: 2px solid rgb(59, 59, 59); */
     border-radius: 50%;
     height: 50px;
     width: 50px;
     margin-left: -20px;
-
+    border: 2px solid;
 }
 
 .icons i {
     font-size: 50px;
-    color: rgb(0, 0, 0);
+   
 }
 
 .ClientCards {
     width: 80%;
     display: flex;
-    /* align-items: center; */
     justify-content: center;
     height: 100%;
-    
-    /* background-color: red; */
 }
 
 .leftSideRow {
     width: 100%;
-    /* background-color: red; */
-    /* height: 30vh; */
+    
+    height: 50vh;
     margin: 40px 2.5px;
-    /* display: flex; */
-    flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
 }
 
 .rightSideRow {
     width: 100%;
-    /* background-color: red; */
-    /* height: 30vh; */
     margin: 40px 2.5px;
-    /* display: flex; */
     flex-wrap: wrap;
     
 }
 
 .ClientCard {
-    /* height: 30vh; */
+    height: 35vh;
     margin: 5px 0px;
-    /* width: 100%; */
+    width: 100%;
     
     border-radius: 20px;
     padding: 20px;
     border: 2px solid ;
 }
-
+.ClientHeader{
+     display:flex;
+     flex-direction:column;
+     margin:-10px 20px;
+     width:200px;
+     justify-content:flex-end;
+     align-items: center;
+     text-align: center;
+}
 .TopBar {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     
 
